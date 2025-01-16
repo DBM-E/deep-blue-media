@@ -1,7 +1,9 @@
 <template>
   <AppHeader />
   <div class="dbm-page-content">
-    <NuxtPage />
+    <div class="dbm-page-display">
+      <NuxtPage />
+    </div>
     <div class="dbm-footer">
       <div class="dbm-footer-separator"></div>
       <div class="dbm-logo"></div>
@@ -31,8 +33,15 @@
 
 <style lang="scss" scoped>
 .dbm-page-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   max-width: var(--app-max-width);
   margin: 0 auto;
+}
+
+.dbm-page-display {
+  flex-grow: 1;
 }
 
 $dbm-logo-size: 10rem;
@@ -66,7 +75,7 @@ $dbm-logo-spacing: calc($dbm-logo-size / 2);
 }
 
 .dbm-contact {
-  padding: 0.75rem 2rem;
+  padding: 1.25rem 2rem;
 
   @media (max-width: 600px) {
     margin-top: 2rem;

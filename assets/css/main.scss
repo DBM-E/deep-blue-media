@@ -4,7 +4,7 @@ html {
   --app-border-radius: 8px;
   --app-card-color: #012;
   --app-text-color: white;
-  --app-max-width: 1600px;
+  --app-max-width: 1440px;
 
   background: var(--app-background-color);
   color: var(--app-text-color);
@@ -22,4 +22,10 @@ body {
 p {
   margin: 0;
   padding: 0.5rem 0;
+}
+
+#__nuxt {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
