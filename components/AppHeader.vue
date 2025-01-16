@@ -4,6 +4,9 @@
 
 <style lang="scss" scoped>
 .dbm-header-title {
-  font-size: 2rem;
+  background: var(--app-card-color);
+  font: 900 2rem/1 "Vollkorn SC", serif;
+  padding: 1rem;
+  text-align: center;
 }
 </style>
