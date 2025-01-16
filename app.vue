@@ -1,31 +1,30 @@
 <template>
   <AppHeader />
   <div class="dbm-page-content">
-    <div class="dbm-page-display">
-      <NuxtPage />
-    </div>
-    <div class="dbm-footer">
-      <div class="dbm-footer-separator"></div>
-      <div class="dbm-logo"></div>
+    <NuxtPage />
+  </div>
 
-      <div class="dbm-contact">
-        <div class="dbm-contact-cta">
-          <p>Ready to make an inquiry?</p>
-          <p>
-            Whether you need to capture the perfect moment or craft a compelling
-            story, we can help make it happen.
-          </p>
+  <div class="dbm-footer">
+    <div class="dbm-footer-separator"></div>
+    <div class="dbm-logo"></div>
+
+    <div class="dbm-contact">
+      <div class="dbm-contact-cta">
+        <p>Ready to make an inquiry?</p>
+        <p>
+          Whether you need to capture the perfect moment or craft a compelling
+          story, we can help make it happen.
+        </p>
+      </div>
+      <div class="dbm-contact-info">
+        <div class="dbm-contact-title">Contact Us</div>
+        <div class="dbm-contact-item">
+          <MdiIcon class="dbm-contact-icon" icon="mdiEmail" />
+          <div class="dbm-contact-label">chris@deepbluemedia.us</div>
         </div>
-        <div class="dbm-contact-info">
-          <div class="dbm-contact-title">Contact Us</div>
-          <div class="dbm-contact-item">
-            <MdiIcon class="dbm-contact-icon" icon="mdiEmail" />
-            <div class="dbm-contact-label">chris@deepbluemedia.us</div>
-          </div>
-          <div class="dbm-contact-item">
-            <MdiIcon class="dbm-contact-icon" icon="mdiPhone" />
-            <div class="dbm-contact-label">(509)-273-9481</div>
-          </div>
+        <div class="dbm-contact-item">
+          <MdiIcon class="dbm-contact-icon" icon="mdiPhone" />
+          <div class="dbm-contact-label">(509)-273-9481</div>
         </div>
       </div>
     </div>
@@ -34,15 +33,9 @@
 
 <style lang="scss" scoped>
 .dbm-page-content {
-  display: flex;
-  flex-direction: column;
   flex-grow: 1;
   max-width: var(--app-max-width);
   margin: 0 auto;
-}
-
-.dbm-page-display {
-  flex-grow: 1;
 }
 
 $dbm-logo-size: 10rem;
@@ -76,6 +69,8 @@ $dbm-logo-spacing: calc($dbm-logo-size / 2);
 }
 
 .dbm-contact {
+  margin: 0 auto;
+  max-width: var(--app-max-width);
   padding: 1.25rem 2rem;
 
   @media (max-width: 600px) {
