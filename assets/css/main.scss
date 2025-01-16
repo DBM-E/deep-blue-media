@@ -1,7 +1,9 @@
 html {
   --app-background-color: black;
-  --app-card-color: #0d1b29;
+  --app-border-radius: 8px;
+  --app-card-color: #012;
   --app-text-color: white;
+  --app-max-width: 1600px;
 
   background: var(--app-background-color);
   color: var(--app-text-color);
@@ -9,5 +11,7 @@ html {
 }
 
 body {
+  font: 1rem/1.6 "Lato", sans-serif;
+  letter-spacing: 0.25px;
   margin: 0;
 }
