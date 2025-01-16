@@ -17,6 +17,7 @@
           </p>
         </div>
         <div class="dbm-contact-info">
+          <div class="dbm-contact-title">Contact Us</div>
           <div class="dbm-contact-item">
             <MdiIcon class="dbm-contact-icon" icon="mdiEmail" />
             <div class="dbm-contact-label">chris@deepbluemedia.us</div>
@@ -90,9 +91,22 @@ $dbm-logo-spacing: calc($dbm-logo-size / 2);
 }
 
 .dbm-contact-info {
+  @media (max-width: 600px) {
+    border-top: 1px solid white;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
   @media (min-width: 601px) {
+    text-align: right;
     order: 1;
   }
+}
+
+.dbm-contact-title {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0;
 }
 
 .dbm-contact-item {
