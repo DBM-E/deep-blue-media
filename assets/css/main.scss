@@ -1,13 +1,31 @@
 html {
+  --app-accent-color: #3d6e94;
   --app-background-color: black;
-  --app-card-color: #0d1b29;
+  --app-border-radius: 8px;
+  --app-card-color: #012;
   --app-text-color: white;
+  --app-max-width: 1440px;
 
   background: var(--app-background-color);
   color: var(--app-text-color);
   font-size: 16px;
+  height: 100%;
 }
 
 body {
+  font: 1rem/1.6 "Lato", sans-serif;
+  height: 100%;
+  letter-spacing: 0.25px;
   margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+#__nuxt {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }

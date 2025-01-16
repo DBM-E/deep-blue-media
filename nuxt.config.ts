@@ -8,9 +8,12 @@ export default defineNuxtConfig({
       "@nuxtjs/google-fonts",
       {
         families: {
-          "Vollkorn+SC": true,
+          Lato: [100, 400, 700, 900],
+          Vollkorn: [400, 500, 600, 700, 800, 900],
+          "Vollkorn+SC": [400, 600, 700, 900],
         },
       },
     ],
+    "nuxt-mdi",
   ],
 });
