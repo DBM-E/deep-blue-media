@@ -9,10 +9,12 @@ html {
   background: var(--app-background-color);
   color: var(--app-text-color);
   font-size: 16px;
+  height: 100%;
 }
 
 body {
   font: 1rem/1.6 "Lato", sans-serif;
+  height: 100%;
   letter-spacing: 0.25px;
   margin: 0;
 }
