@@ -18,7 +18,7 @@ const props = defineProps<{
 
 <style lang="scss" scoped>
 .dbm-video-card {
-  aspect-ratio: 3/1;
+  aspect-ratio: 1.825/1;
   background: black;
   border-radius: var(--app-border-radius);
   margin-top: 1rem;
@@ -31,6 +31,7 @@ const props = defineProps<{
   display: block;
   height: 100%;
   margin: 0 auto;
+  width: 100%;
 }
 
 .dbm-video-label {
