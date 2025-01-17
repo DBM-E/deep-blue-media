@@ -7,7 +7,7 @@
       <div class="dbm-contact-cta">
         <p class="dbm-contact-title">Ready to make an inquiry?</p>
         <p>
-          Whether you need to capture the perfect moment or craft a compelling
+          Whether you need to capture the perfect moment or cut a compelling
           story, we can help make it happen.
         </p>
       </div>
