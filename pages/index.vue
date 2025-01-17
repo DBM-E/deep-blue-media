@@ -73,7 +73,7 @@ const profileData = [
   {
     title: "Chris",
     description:
-      "You should talk about your unique skills and qualifications here.",
+      "You should talk about your unique skills and qualifications here. Licensed pilot, certified scuba diver, and other skills that enhance your ability to deliver these services.",
   },
 ];
 </script>
