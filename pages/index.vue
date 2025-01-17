@@ -1,7 +1,7 @@
 <template>
   <AppVideoCard :src="splashData.src" :title="splashData.title" />
 
-  <div class="dbm-service-cards">
+  <div class="dbm-services">
     <AppCard
       class="dbm-service-card"
       v-for="item in serviceData"
@@ -10,8 +10,8 @@
     />
   </div>
 
-  <div class="dbm-card">
-    <div class="dbm-card-header">About Us</div>
+  <div class="dbm-section">
+    <div class="dbm-section-header">The Company</div>
     <p>
       <strong>Deep Blue Media</strong> is a video production company based in
       Spokane, Washington.
@@ -23,13 +23,16 @@
     </p>
   </div>
 
-  <div class="dbm-profiles">
-    <ProfileCard
-      class="dbm-profile-card"
-      v-for="item in profileData"
-      :title="item.title"
-      :description="item.description"
-    />
+  <div class="dbm-section">
+    <div class="dbm-section-header">The Crew</div>
+    <div class="dbm-profiles">
+      <ProfileCard
+        class="dbm-profile-card"
+        v-for="item in profileData"
+        :title="item.title"
+        :description="item.description"
+      />
+    </div>
   </div>
 </template>
 
@@ -82,11 +85,21 @@ const profileData = [
   margin-top: 0.5rem;
 }
 
-.dbm-card-header {
-  font: 400 1.5rem/1 "Vollkorn", san-serif;
+.dbm-section {
+  padding: 0 2rem;
+
+  @media (max-width: 600px) {
+    padding: 0 1rem;
+  }
+}
+
+.dbm-section-header {
+  font: 400 2rem/1 "Vollkorn SC", san-serif;
+  padding: 1rem 0;
   text-align: center;
 }
 
+.dbm-services,
 .dbm-profiles {
   display: grid;
   margin-top: 1rem;

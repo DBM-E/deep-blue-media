@@ -44,7 +44,7 @@ $dbm-profile-image-spacing: calc($dbm-profile-image-size / 2);
 }
 
 .dbm-profile-card-title {
-  font: 1.5rem/1 "Vollkorn SC", serif;
+  font: 1.5rem/1 "Vollkorn", serif;
   padding: 1rem 0 0.5rem;
   text-align: center;
 }
