@@ -85,6 +85,7 @@
 }
 
 .dbm-nav-link {
+  transition-duration: 0.4s;
   color: white;
   flex-grow: 1;
   font-weight: 700;
@@ -94,7 +95,7 @@
   width: 0;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.0625);
   }
 }
 </style>

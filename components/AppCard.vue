@@ -25,7 +25,7 @@ const props = defineProps<{
 <style lang="scss" scoped>
 .dbm-app-card {
   background: var(--app-card-color);
-  border: 1px solid var(--app-card-border-color);
+  border: 2px solid var(--app-card-border-color);
   border-radius: var(--app-border-radius);
   overflow: hidden;
 }

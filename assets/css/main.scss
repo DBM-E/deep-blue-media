@@ -6,7 +6,7 @@ html {
   --app-border-radius: 8px;
   --app-card-color: #0c1326;
   --app-card-border-color: #282858;
-  --app-image-placeholder-color: #19316b;
+  --app-image-placeholder-color: var(--app-card-border-color);
   --app-text-color: white;
   --app-max-width: 1280px;
 

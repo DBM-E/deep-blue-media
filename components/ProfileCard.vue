@@ -24,7 +24,7 @@ $dbm-profile-image-spacing: calc($dbm-profile-image-size / 2);
 
 .dbm-profile-card {
   background: var(--app-card-color);
-  border: 1px solid var(--app-card-border-color);
+  border: 2px solid var(--app-card-border-color);
   border-radius: var(--app-border-radius);
   margin-top: $dbm-profile-image-spacing;
   position: relative;
