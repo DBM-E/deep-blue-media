@@ -12,15 +12,17 @@
 
   <div class="dbm-section">
     <div class="dbm-section-header">The Company</div>
-    <p>
-      <strong>Deep Blue Media</strong> is a video production company based in
-      Spokane, Washington.
-    </p>
-    <p>
-      We specialize in combining our love of adventure with our expertise in
-      video production, culminating in content that is exciting to direct and
-      extraordinary to experience.
-    </p>
+    <div class="dbm-about-us">
+      <p>
+        <strong>Deep Blue Media</strong> is a video production company based in
+        Spokane, Washington.
+      </p>
+      <p>
+        We specialize in combining our love of adventure with our expertise in
+        video production, culminating in content that is exciting to direct and
+        extraordinary to experience.
+      </p>
+    </div>
   </div>
 
   <div class="dbm-section">
@@ -86,10 +88,10 @@ const profileData = [
 }
 
 .dbm-section {
-  padding: 0 2rem;
+  padding: 0.5rem 2rem;
 
   @media (max-width: 600px) {
-    padding: 0 1rem;
+    padding: 1rem;
   }
 }
 
@@ -100,10 +102,14 @@ const profileData = [
   text-align: center;
 }
 
+.dbm-about-us {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
 .dbm-services,
 .dbm-profiles {
   display: grid;
-  margin-top: 1rem;
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
