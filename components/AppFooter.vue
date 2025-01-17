@@ -39,7 +39,7 @@ $dbm-logo-spacing: calc($dbm-logo-size / 2);
 .dbm-logo {
   background: url("assets/logo.png");
   background-position: center center;
-  background-repeat: norepeat;
+  background-repeat: no-repeat;
   background-size: contain;
   border-radius: 50%;
   height: $dbm-logo-size;
