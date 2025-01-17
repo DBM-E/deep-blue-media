@@ -13,9 +13,10 @@
 <style lang="scss" scoped>
 .dbm-sticky-header {
   background: var(--app-card-color);
-  border-bottom: 1px solid #345;
+  border-bottom: 1px solid var(--app-card-border-color);
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .dbm-header-card {

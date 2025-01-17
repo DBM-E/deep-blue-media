@@ -1,10 +1,14 @@
+/** NOTE(vika): The max width is based on the standard size of an HD video. */
+
 html {
   --app-accent-color: #3d6e94;
-  --app-background-color: black;
+  --app-background-color: #001020;
   --app-border-radius: 8px;
-  --app-card-color: #012;
+  --app-card-color: #0c1326;
+  --app-card-border-color: #282858;
+  --app-image-placeholder-color: #19316b;
   --app-text-color: white;
-  --app-max-width: 1440px;
+  --app-max-width: 1280px;
 
   background: var(--app-background-color);
   color: var(--app-text-color);
@@ -28,4 +32,5 @@ p {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-y: auto;
 }

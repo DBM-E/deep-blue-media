@@ -1,12 +1,12 @@
 <template>
-  <div class="dbm-card">
-    <div class="dbm-card-image"></div>
-    <div class="dbm-card-text">
-      <div class="dbm-card-title">{{ props.title }}</div>
+  <div class="dbm-app-card">
+    <div class="dbm-app-card-image"></div>
+    <div class="dbm-app-card-text">
+      <div class="dbm-app-card-title">{{ props.title }}</div>
       <div v-if="props.tagline" class="dbm-card-tagline">
         {{ props.tagline }}
       </div>
-      <p class="dbm-card-description">
+      <p class="dbm-app-card-description">
         {{ props.description }}
       </p>
     </div>
@@ -23,40 +23,31 @@ const props = defineProps<{
 </script>
 
 <style lang="scss" scoped>
-.dbm-card {
+.dbm-app-card {
   background: var(--app-card-color);
+  border: 1px solid var(--app-card-border-color);
   border-radius: var(--app-border-radius);
-  display: flex;
-  flex-direction: row;
-  padding: 1.5rem 2rem;
-
-  @media (max-width: 600px) {
-    padding: 1rem;
-  }
+  overflow: hidden;
 }
 
-.dbm-card-image {
-  background: red;
-  border-radius: var(--app-border-radius);
+.dbm-app-card-image {
+  background: var(--app-image-placeholder-color);
   flex-shrink: 0;
-  margin: 0 auto;
   height: 8rem;
-  width: 8rem;
-
-  @media (max-width: 600px) {
-    height: 6rem;
-    width: 6rem;
-  }
+  width: 100%;
 }
 
-.dbm-card-text {
+.dbm-app-card-text {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   justify-content: center;
-  padding: 0 0 0 0.75rem;
+  padding: 0.75rem 1rem;
 }
 
-.dbm-card-title {
-  font: 1.5rem/1 "Vollkorn SC", serif;
+.dbm-app-card-title {
+  font: 1.5rem/1 "Vollkorn", serif;
+  padding: 0.5rem 0;
+  text-align: center;
 }
 </style>
