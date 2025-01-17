@@ -18,15 +18,17 @@ const props = defineProps<{
 
 <style lang="scss" scoped>
 .dbm-video-card {
+  aspect-ratio: 3/1;
   background: black;
   border-radius: var(--app-border-radius);
-  height: 480px;
   margin-top: 1rem;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .dbm-video-display {
+  display: block;
   height: 100%;
   margin: 0 auto;
 }

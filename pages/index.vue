@@ -95,6 +95,7 @@ const profileData = [
 
 .dbm-section-header {
   font: 400 2rem/1 "Vollkorn SC", san-serif;
+  letter-spacing: -0.025em;
   padding: 1rem 0;
   text-align: center;
 }
