@@ -1,12 +1,12 @@
 <template>
-  <div class="dbm-card">
-    <div class="dbm-card-image"></div>
-    <div class="dbm-card-text">
-      <div class="dbm-card-title">{{ props.title }}</div>
+  <div class="dbm-app-card">
+    <div class="dbm-app-card-image"></div>
+    <div class="dbm-app-card-text">
+      <div class="dbm-app-card-title">{{ props.title }}</div>
       <div v-if="props.tagline" class="dbm-card-tagline">
         {{ props.tagline }}
       </div>
-      <p class="dbm-card-description">
+      <p class="dbm-app-card-description">
         {{ props.description }}
       </p>
     </div>
@@ -23,19 +23,12 @@ const props = defineProps<{
 </script>
 
 <style lang="scss" scoped>
-.dbm-card {
-  background: var(--app-card-color);
-  border-radius: var(--app-border-radius);
+.dbm-app-card {
   display: flex;
   flex-direction: row;
-  padding: 1.5rem 2rem;
-
-  @media (max-width: 600px) {
-    padding: 1rem;
-  }
 }
 
-.dbm-card-image {
+.dbm-app-card-image {
   background: red;
   border-radius: var(--app-border-radius);
   flex-shrink: 0;
@@ -49,14 +42,15 @@ const props = defineProps<{
   }
 }
 
-.dbm-card-text {
+.dbm-app-card-text {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   justify-content: center;
   padding: 0 0 0 0.75rem;
 }
 
-.dbm-card-title {
+.dbm-app-card-title {
   font: 1.5rem/1 "Vollkorn SC", serif;
 }
 </style>
