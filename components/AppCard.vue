@@ -29,7 +29,7 @@ const props = defineProps<{
 }
 
 .dbm-app-card-image {
-  background: red;
+  background: var(--app-image-placeholder-color);
   border-radius: var(--app-border-radius);
   flex-shrink: 0;
   margin: 0 auto;

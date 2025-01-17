@@ -31,7 +31,7 @@ $dbm-profile-image-spacing: calc($dbm-profile-image-size / 2);
 }
 
 .dbm-profile-card-image {
-  background: red;
+  background: var(--app-image-placeholder-color);
   border-radius: var(--app-border-radius);
   height: $dbm-profile-image-size;
   left: calc(50% - $dbm-profile-image-spacing);
