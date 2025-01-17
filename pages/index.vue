@@ -45,18 +45,14 @@ const splashData = {
 };
 
 const serviceData = [
-  {
-    title: "Photography",
-    description: "Wedding photo shoots, Scuba certified",
-  },
   { title: "Video Production", description: "Real estate, wedding, corporate" },
-  { title: "Equipment Rental", description: "Cameras and drones" },
-  { title: "Studio Recordings", description: "In a studio" },
   {
     title: "Video Editing",
     description:
       "Short form (e.g. social media) and long form (e.g. documentaries)",
   },
+  { title: "Equipment Rental", description: "Cameras and drones" },
+  { title: "Studio Recordings", description: "In a studio" },
 ];
 
 const profileData = [
@@ -91,7 +87,7 @@ const profileData = [
   padding: 0.5rem 2rem;
 
   @media (max-width: 600px) {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
   }
 }
 
