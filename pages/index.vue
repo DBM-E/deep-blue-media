@@ -1,13 +1,16 @@
 <template>
-  <AppVideoCard :src="splashData.src" :title="splashData.title" />
+  <!-- <AppVideoCard :src="splashData.src" :title="splashData.title" /> -->
 
-  <div class="dbm-services">
-    <AppCard
-      class="dbm-service-card"
-      v-for="item in serviceData"
-      :title="item.title"
-      :description="item.description"
-    />
+  <div class="dbm-section">
+    <div class="dbm-section-header">The Services</div>
+    <div class="dbm-services">
+      <AppCard
+        class="dbm-service-card"
+        v-for="item in serviceData"
+        :title="item.title"
+        :description="item.description"
+      />
+    </div>
   </div>
 
   <div class="dbm-section">
@@ -22,6 +25,7 @@
         video production, culminating in content that is exciting to direct and
         extraordinary to experience.
       </p>
+      <!-- TODO(vika): Inquire whether there are service limits re: distance. -->
     </div>
   </div>
 
@@ -45,14 +49,17 @@ const splashData = {
 };
 
 const serviceData = [
-  { title: "Video Production", description: "Real estate, wedding, corporate" },
+  {
+    title: "Video Production",
+    description: "Filming for social media, documentaries, weddings.",
+  },
   {
     title: "Video Editing",
     description:
-      "Short form (e.g. social media) and long form (e.g. documentaries)",
+      "Trimming, splicing, merging clips. Color grading. Mixing audio. Subtitles. ",
   },
-  { title: "Equipment Rental", description: "Cameras and drones" },
   { title: "Studio Recordings", description: "In a studio" },
+  { title: "Equipment Rental", description: "DJI Ronin 4D. Drones." },
 ];
 
 const profileData = [
@@ -70,19 +77,6 @@ const profileData = [
 </script>
 
 <style lang="scss" scoped>
-.dbm-card {
-  background: var(--app-card-color);
-  padding: 2rem;
-
-  @media (max-width: 600px) {
-    padding: 1rem;
-  }
-}
-
-.dbm-card:not(:first-child) {
-  margin-top: 0.5rem;
-}
-
 .dbm-section {
   padding: 0.5rem 2rem;
 
@@ -98,22 +92,39 @@ const profileData = [
   text-align: center;
 }
 
+.dbm-services {
+  column-gap: 0.5rem;
+  display: grid;
+  row-gap: 0.5rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 601px) and (max-width: 1023px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .dbm-about-us {
   max-width: 640px;
   margin: 0 auto;
 }
 
-.dbm-services,
 .dbm-profiles {
+  column-gap: 0.5rem;
   display: grid;
+  row-gap: 1rem;
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
-    row-gap: 1rem;
   }
 
   @media (min-width: 601px) {
-    column-gap: 0.5rem;
     grid-template-columns: 1fr 1fr;
   }
 }
