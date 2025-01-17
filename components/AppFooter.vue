@@ -67,10 +67,15 @@ $dbm-logo-spacing: calc($dbm-logo-size / 2);
     padding: 0.75rem 1rem;
   }
 
-  @media (min-width: 601px) {
+  @media (min-width: 601px) and (max-width: 767px) {
     column-gap: calc($dbm-logo-size + 2rem);
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 30% 1fr;
   }
 }
 
