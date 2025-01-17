@@ -7,6 +7,14 @@ export default defineNuxtConfig({
       scrollBehaviorType: "smooth",
     },
   },
+  routeRules: {
+    "/services": {
+      redirect: "/#services",
+    },
+    "/about-us": {
+      redirect: "/#about-us",
+    },
+  },
   css: ["~/assets/css/main.scss"],
   modules: [
     [

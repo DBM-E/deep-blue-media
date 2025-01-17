@@ -2,7 +2,7 @@
   <!-- <AppVideoCard :src="splashData.src" :title="splashData.title" /> -->
 
   <div class="dbm-section">
-    <a id="#services"></a>
+    <a class="dbm-scroll-to" id="services"></a>
     <div class="dbm-section-header">The Services</div>
     <div class="dbm-services">
       <AppCard
@@ -15,7 +15,7 @@
   </div>
 
   <div class="dbm-section">
-    <a id="#about-us"></a>
+    <a class="dbm-scroll-to" id="about-us"></a>
     <div class="dbm-section-header">The Company</div>
     <div class="dbm-about-us">
       <p>
@@ -81,6 +81,7 @@ const profileData = [
 <style lang="scss" scoped>
 .dbm-section {
   padding: 0.5rem 2rem;
+  position: relative;
 
   @media (max-width: 600px) {
     padding: 0.5rem 1rem;

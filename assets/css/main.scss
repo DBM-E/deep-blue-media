@@ -34,3 +34,13 @@ p {
   height: 100%;
   overflow-y: auto;
 }
+
+/* NOTE(vika): Offset to appear just under header. */
+.dbm-scroll-to {
+  position: absolute;
+  top: -210px;
+
+  @media (max-width: 600px) {
+    top: -144px;
+  }
+}

@@ -8,9 +8,11 @@
       </div>
     </div>
 
-    <div class="dbm-nav-links">
-      <a class="dbm-nav-link" href="#services">Services</a>
-      <a class="dbm-nav-link" href="#about-us">About Us</a>
+    <div class="dbm-nav-card">
+      <div class="dbm-nav-links">
+        <a class="dbm-nav-link" href="/#services">Services</a>
+        <a class="dbm-nav-link" href="/#about-us">About Us</a>
+      </div>
     </div>
   </div>
 </template>
@@ -18,14 +20,12 @@
 <style lang="scss" scoped>
 .dbm-sticky-header {
   background: var(--app-card-color);
-  border-bottom: 2px solid var(--app-card-border-color);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .dbm-header-card {
-  border-bottom: 2px solid var(--app-card-border-color);
   max-width: var(--app-max-width);
   margin: 0 auto;
   padding: 2rem 0;
@@ -71,9 +71,16 @@
   }
 }
 
+.dbm-nav-card {
+  border-bottom: 2px solid var(--app-card-border-color);
+  border-top: 2px solid var(--app-card-border-color);
+}
+
 .dbm-nav-links {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
+  max-width: var(--app-max-width);
   padding: 0 2rem;
 }
 
@@ -85,5 +92,9 @@
   text-align: center;
   text-decoration: none;
   width: 0;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
 }
 </style>
