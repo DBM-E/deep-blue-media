@@ -2,6 +2,7 @@
   <!-- <AppVideoCard :src="splashData.src" :title="splashData.title" /> -->
 
   <div class="dbm-section">
+    <a id="#services"></a>
     <div class="dbm-section-header">The Services</div>
     <div class="dbm-services">
       <AppCard
@@ -14,6 +15,7 @@
   </div>
 
   <div class="dbm-section">
+    <a id="#about-us"></a>
     <div class="dbm-section-header">The Company</div>
     <div class="dbm-about-us">
       <p>
