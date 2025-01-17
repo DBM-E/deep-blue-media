@@ -85,13 +85,14 @@
 }
 
 .dbm-nav-link {
-  transition-duration: 0.4s;
   color: white;
   flex-grow: 1;
-  font-weight: 700;
+  font: 700 1rem/1.6 "Lato", sans-serif;
+  letter-spacing: 0.75px;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
+  transition-duration: 0.4s;
   width: 0;
 
   &:hover {
