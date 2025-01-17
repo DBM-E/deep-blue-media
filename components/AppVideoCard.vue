@@ -1,6 +1,6 @@
 <template>
   <div class="dbm-video-card">
-    <video class="dbm-video-display">
+    <video class="dbm-video-display" autoplay loop muted>
       <source :src="props.src" type="video/mp4" />
     </video>
   </div>
