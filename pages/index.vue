@@ -24,11 +24,10 @@
   </div>
 
   <div class="dbm-profiles">
-    <AppCard
+    <ProfileCard
       class="dbm-profile-card"
       v-for="item in profileData"
       :title="item.title"
-      :tagline="item.tagline"
       :description="item.description"
     />
   </div>
@@ -58,13 +57,11 @@ const serviceData = [
 const profileData = [
   {
     title: "Evan",
-    tagline: "Employee",
     description:
       "You should talk about your unique skills and qualifications here.",
   },
   {
     title: "Chris",
-    tagline: "Employee",
     description:
       "You should talk about your unique skills and qualifications here.",
   },
@@ -92,11 +89,11 @@ const profileData = [
 
 .dbm-profiles {
   display: grid;
-
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
+    row-gap: 1rem;
   }
 
   @media (min-width: 601px) {
