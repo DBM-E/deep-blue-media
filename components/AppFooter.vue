@@ -5,7 +5,7 @@
 
     <div class="dbm-contact">
       <div class="dbm-contact-cta">
-        <p class="dbm-contact-title">Ready to make an inquiry?</p>
+        <p class="dbm-contact-title">Any Questions?</p>
         <p>
           Whether you need to capture the perfect moment or cut a compelling
           story, we can help make it happen.
