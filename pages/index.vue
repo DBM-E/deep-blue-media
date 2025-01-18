@@ -54,18 +54,21 @@
   <div class="dbm-section">
     <a class="dbm-scroll-to" id="rentals"></a>
     <div class="dbm-section-header">The Rentals</div>
-    <div class="dbm-rental-text">
-      <div class="dbm-card">
-        <div class="dbm-card-title">The Studio</div>
-        <p>
-          Located in Spokane Valley, Washington, our professional recording
-          space is ready for post-production ADR with high-quality audio
-          equipment.
-        </p>
-        <p>
-          The space and equipment are also available to rent to create your own
-          music or voice-over tracks.
-        </p>
+    <div class="dbm-rental-cards">
+      <div class="dbm-image-card">
+        <div class="dbm-image-card-display studio"></div>
+        <div class="dbm-image-card-text">
+          <div class="dbm-card-title">The Studio</div>
+          <p>
+            Located in Spokane Valley, Washington, our professional recording
+            space is ready for post-production ADR with high-quality audio
+            equipment.
+          </p>
+          <p>
+            The space and equipment are also available to rent to create your
+            own music or voice-over tracks.
+          </p>
+        </div>
       </div>
       <div class="dbm-image-card">
         <div class="dbm-image-card-display camera"></div>
@@ -114,7 +117,7 @@
 }
 
 .dbm-video-production-text,
-.dbm-rental-text {
+.dbm-rental-cards {
   column-gap: 0.5rem;
   display: grid;
   overflow: hidden;
@@ -123,6 +126,10 @@
   @media (min-width: 640px) {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.dbm-image-card-display.studio {
+  background-image: url("assets/studio-preview.jpg");
 }
 
 .dbm-image-card-display.camera {
