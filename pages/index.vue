@@ -11,7 +11,7 @@
 
     <!-- The bread and butter services. -->
     <div class="dbm-video-production-text">
-      <div class="dbm-video-production-section">
+      <div class="dbm-card">
         <div class="dbm-card-title">Video Production</div>
         <p>
           From short-form content for social media and commercial
@@ -25,7 +25,7 @@
         </p>
       </div>
 
-      <div class="dbm-video-production-section">
+      <div class="dbm-card">
         <div class="dbm-card-title">Video Editing</div>
         <p>
           We provide standard editing techniques (trimming, splicing, and
@@ -103,17 +103,6 @@ const serviceData = [
 
   @media (min-width: 640px) {
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-.dbm-video-production-section {
-  background: var(--app-card-color);
-  border: 2px solid var(--app-card-border-color);
-  border-radius: var(--app-border-radius);
-  padding: 1rem;
-
-  @media (min-width: 640px) {
-    padding: 1rem 2rem;
   }
 }
 

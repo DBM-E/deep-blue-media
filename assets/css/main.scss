@@ -69,6 +69,18 @@ p {
   }
 }
 
+/* TODO(vika): Make sure elements all use the same breakpoint 640 */
+.dbm-card {
+  background: var(--app-card-color);
+  border: 2px solid var(--app-card-border-color);
+  border-radius: var(--app-border-radius);
+  padding: 1rem;
+
+  @media (min-width: 640px) {
+    padding: 1rem 2rem;
+  }
+}
+
 .dbm-card-title {
   font: 500 1.5rem/1 "Vollkorn", san-serif;
   padding: 0.5rem 0;
