@@ -49,11 +49,11 @@ p {
 }
 
 .dbm-section {
-  padding: 0.5rem 2rem;
+  padding: 0 2rem;
   position: relative;
 
   @media (max-width: 600px) {
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
   }
 }
 
@@ -65,7 +65,7 @@ p {
 
   @media (min-width: 640px) {
     font-size: 2.25rem;
-    padding: 1.5rem 0;
+    padding: 2.25rem 0;
   }
 }
 
