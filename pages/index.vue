@@ -15,8 +15,8 @@
         <div class="dbm-card-title">Video Production</div>
         <p>
           From short-form content for social media and commercial
-          advertisements, to long-form content including weddings,
-          documentaries, and corporate messaging.
+          advertisements, to long-form content including corporate messaging,
+          weddings, films, and documentaries.
         </p>
         <p>
           In addition, we are licensed by the FAA to operate drones—perfect for
@@ -28,9 +28,13 @@
       <div class="dbm-video-production-section">
         <div class="dbm-card-title">Video Editing</div>
         <p>
-          We provide standard editing from trimming, splicing and merging to
-          color grading. We can also do basic audio enhancements with music and
-          subtitles.
+          We provide standard editing techniques (trimming, splicing, and
+          merging) plus basic visual adjustments such as color grading
+          (coordinating brightness, saturation, levels, and contrast).
+        </p>
+        <p>
+          This also includes basic audio editing such as overdubbing music. We
+          even offer to transcribe accessible subtitles.
         </p>
       </div>
     </div>
