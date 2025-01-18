@@ -3,37 +3,38 @@
     <a class="dbm-scroll-to" id="services"></a>
     <div class="dbm-section-header">The Services</div>
 
-    <div class="dbm-video-production-card">
-      <AppVideoCard
-        class="dbm-video-production-display"
-        src="_nuxt/assets/video-production-preview.mp4"
-      />
-      <div class="dbm-video-production-text">
-        <div class="dbm-video-production-section">
-          <div class="dbm-video-production-title">Video Production</div>
-          <div class="dbm-video-production-description">
-            <p>
-              From short-form content for social media and commercial
-              advertisements, to long-form content including weddings,
-              documentaries, and corporate messaging.
-            </p>
-            <p>
-              In addition, we are licensed by the FAA to operate drones—perfect
-              for aerial shots for insurance inspections and real estate
-              listings. We are also SCUBA certified for underwater photography.
-            </p>
-          </div>
-        </div>
+    <!-- The "Portfolio" video. -->
+    <AppVideoCard
+      class="dbm-video-production-display"
+      src="_nuxt/assets/video-production-preview.mp4"
+    />
 
-        <div class="dbm-video-production-section">
-          <div class="dbm-video-production-title">Video Editing</div>
-          <div class="dbm-video-production-description">
-            <p>
-              We provide standard editing from trimming, splicing and merging to
-              color grading. We can also do basic audio enhancements with music
-              and subtitles.
-            </p>
-          </div>
+    <!-- The bread and butter services. -->
+    <div class="dbm-video-production-text">
+      <div class="dbm-video-production-section">
+        <div class="dbm-video-production-title">Video Production</div>
+        <div class="dbm-video-production-description">
+          <p>
+            From short-form content for social media and commercial
+            advertisements, to long-form content including weddings,
+            documentaries, and corporate messaging.
+          </p>
+          <p>
+            In addition, we are licensed by the FAA to operate drones—perfect
+            for aerial shots for insurance inspections and real estate listings.
+            We are also SCUBA certified for underwater photography.
+          </p>
+        </div>
+      </div>
+
+      <div class="dbm-video-production-section">
+        <div class="dbm-video-production-title">Video Editing</div>
+        <div class="dbm-video-production-description">
+          <p>
+            We provide standard editing from trimming, splicing and merging to
+            color grading. We can also do basic audio enhancements with music
+            and subtitles.
+          </p>
         </div>
       </div>
     </div>
@@ -92,16 +93,11 @@ const serviceData = [
     grid-template-columns: repeat(4, 1fr);
   }
 }
-.dbm-video-production-card {
-  column-gap: 0.5rem;
-  display: grid;
-  overflow: hidden;
-  row-gap: 0.5rem;
-}
 
 .dbm-video-production-text {
   column-gap: 0.5rem;
   display: grid;
+  margin-top: 0.5rem;
   overflow: hidden;
   row-gap: 0.5rem;
 
