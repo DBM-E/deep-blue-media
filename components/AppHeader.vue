@@ -10,9 +10,9 @@
 
     <div class="dbm-nav-card">
       <div class="dbm-nav-links">
-        <a class="dbm-nav-link" href="/#services">Services</a>
-        <a class="dbm-nav-link" href="/#rentals">Rentals</a>
-        <a class="dbm-nav-link" href="/about">About</a>
+        <NuxtLink class="dbm-nav-link" to="/services">Services</NuxtLink>
+        <NuxtLink class="dbm-nav-link" to="/rentals">Rentals</NuxtLink>
+        <NuxtLink class="dbm-nav-link" to="/about">About</NuxtLink>
       </div>
     </div>
   </div>
