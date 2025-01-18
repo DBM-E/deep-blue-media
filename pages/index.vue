@@ -52,6 +52,7 @@
   </div>
 
   <div class="dbm-section">
+    <a class="dbm-scroll-to" id="rentals"></a>
     <div class="dbm-section-header">The Rentals</div>
     <div class="dbm-rental-text">
       <div class="dbm-card">
@@ -74,7 +75,6 @@
   </div>
 
   <div class="dbm-section">
-    <a class="dbm-scroll-to" id="pricing"></a>
     <div class="dbm-section-header">The Pricing</div>
     <div class="dbm-single-width">
       <div>
