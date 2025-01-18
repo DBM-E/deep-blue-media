@@ -14,7 +14,7 @@ const props = defineProps<{
 
 <style lang="scss" scoped>
 .dbm-video-card {
-  aspect-ratio: 1.825/1;
+  aspect-ratio: 1.9/1;
   background: black;
   width: 100%;
 }
