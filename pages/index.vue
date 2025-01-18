@@ -52,9 +52,31 @@
   </div>
 
   <div class="dbm-section">
+    <div class="dbm-section-header">Studio & Equipment Rental</div>
+    <div class="dbm-rental-text">
+      <div class="dbm-card">
+        <div class="dbm-card-title">The Studio</div>
+        <p>
+          Located in Spokane Valley, Washington, our professional recording
+          space is ready for post-production ADR with high-quality audio
+          equipment.
+        </p>
+        <p>
+          The space and equipment are also available to rent to create your own
+          music or voice-over tracks.
+        </p>
+      </div>
+      <div class="dbm-card">
+        <div class="dbm-card-title">DJI Ronin 4D</div>
+        <p>Our premier camera</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="dbm-section">
     <a class="dbm-scroll-to" id="pricing"></a>
     <div class="dbm-section-header">The Pricing</div>
-    <div class="dbm-pricing">
+    <div class="dbm-single-width">
       <p>
         We offer flexible pricing options to meet the needs of almost any
         budget. Contact us for a free consultation—we'll work with you to create
@@ -84,10 +106,10 @@
   }
 }
 
-.dbm-video-production-text {
+.dbm-video-production-text,
+.dbm-rental-text {
   column-gap: 0.5rem;
   display: grid;
-  margin: 0.5rem 0;
   overflow: hidden;
   row-gap: 0.5rem;
 
@@ -96,8 +118,7 @@
   }
 }
 
-.dbm-pricing {
-  max-width: 640px;
-  margin: 0 auto;
+.dbm-video-production-text {
+  margin: 0.5rem 0;
 }
 </style>
