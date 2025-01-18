@@ -66,12 +66,12 @@ $dbm-logo-spacing: calc($dbm-logo-size / 2);
   max-width: var(--app-max-width);
   padding: 1.25rem 2rem;
 
-  @media (max-width: 600px) {
+  @media (max-width: 639px) {
     margin-top: 2rem;
     padding: 0.75rem 1rem;
   }
 
-  @media (min-width: 601px) and (max-width: 767px) {
+  @media (min-width: 640px) and (max-width: 767px) {
     column-gap: calc($dbm-logo-size + 2rem);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -84,13 +84,13 @@ $dbm-logo-spacing: calc($dbm-logo-size / 2);
 }
 
 .dbm-contact-info {
-  @media (max-width: 600px) {
+  @media (max-width: 639px) {
     border-top: 1px solid white;
     margin-top: 0.5rem;
     padding-top: 0.5rem;
   }
 
-  @media (min-width: 601px) {
+  @media (min-width: 640px) {
     text-align: right;
     order: 1;
   }
@@ -107,7 +107,7 @@ $dbm-logo-spacing: calc($dbm-logo-size / 2);
   display: flex;
   padding: 0.5rem 0;
 
-  @media (min-width: 601px) {
+  @media (min-width: 640px) {
     justify-content: flex-end;
   }
 }

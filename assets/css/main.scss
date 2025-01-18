@@ -45,7 +45,7 @@ p {
   padding: 0 2rem;
   position: relative;
 
-  @media (max-width: 600px) {
+  @media (max-width: 639px) {
     padding: 0 1rem;
   }
 }
@@ -62,7 +62,6 @@ p {
   }
 }
 
-/* TODO(vika): Make sure elements all use the same breakpoint 640 */
 .dbm-card,
 .dbm-image-card {
   background: var(--app-card-color);

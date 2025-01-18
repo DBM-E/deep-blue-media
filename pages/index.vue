@@ -105,11 +105,11 @@
   row-gap: 0.5rem;
   margin-top: 0.5rem;
 
-  @media (max-width: 600px) {
+  @media (max-width: 639px) {
     grid-template-columns: 1fr;
   }
 
-  @media (min-width: 601px) and (max-width: 1023px) {
+  @media (min-width: 640px) and (max-width: 1023px) {
     grid-template-columns: 1fr 1fr;
   }
 
