@@ -19,8 +19,8 @@
     <div class="dbm-pricing">
       <p>
         We offer flexible pricing options to meet the needs of almost any
-        budget. Contact us to schedule a free consultation—we'll work with you
-        to assess the needs of your project and provide a tailored quote.
+        budget. Contact us for a free consultation—we'll work with you to create
+        a tailored quote that suits the needs of your project.
       </p>
     </div>
   </div>
@@ -28,11 +28,6 @@
 
 <script setup lang="ts">
 const serviceData = [
-  {
-    title: "Video Editing",
-    description:
-      "Trimming, splicing, merging clips. Color grading. Mixing audio. Subtitles. ",
-  },
   {
     title: "Marketing",
     description:
