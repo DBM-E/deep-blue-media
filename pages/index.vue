@@ -1,9 +1,8 @@
 <template>
-  <!-- <AppVideoCard :src="splashData.src" :title="splashData.title" /> -->
-
   <div class="dbm-section">
     <a class="dbm-scroll-to" id="services"></a>
     <div class="dbm-section-header">The Services</div>
+    <ServiceSplashCard />
     <div class="dbm-services">
       <AppCard
         class="dbm-service-card"
@@ -11,6 +10,18 @@
         :title="item.title"
         :description="item.description"
       />
+    </div>
+  </div>
+
+  <div class="dbm-section">
+    <a class="dbm-scroll-to" id="pricing"></a>
+    <div class="dbm-section-header">The Pricing</div>
+    <div class="dbm-pricing">
+      <p>
+        We offer flexible pricing options to meet the needs of almost any
+        budget. Contact us to schedule a free consultation—we'll work with you
+        to assess the needs of your project and provide a tailored quote.
+      </p>
     </div>
   </div>
 
@@ -45,18 +56,14 @@
 </template>
 
 <script setup lang="ts">
-const splashData = {
-  title: "Video Production",
-  src: "_nuxt/assets/video-production-preview.mp4",
-};
-
 const serviceData = [
   {
-    title: "Video Production",
-    description: "Filming for social media, documentaries, weddings.",
+    title: "Video Editing",
+    description:
+      "Trimming, splicing, merging clips. Color grading. Mixing audio. Subtitles. ",
   },
   {
-    title: "Video Editing",
+    title: "Marketing",
     description:
       "Trimming, splicing, merging clips. Color grading. Mixing audio. Subtitles. ",
   },
@@ -99,6 +106,7 @@ const profileData = [
   column-gap: 0.5rem;
   display: grid;
   row-gap: 0.5rem;
+  margin-top: 0.5rem;
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
@@ -113,6 +121,7 @@ const profileData = [
   }
 }
 
+.dbm-pricing,
 .dbm-about-us {
   max-width: 640px;
   margin: 0 auto;

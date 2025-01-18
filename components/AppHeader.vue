@@ -11,6 +11,7 @@
     <div class="dbm-nav-card">
       <div class="dbm-nav-links">
         <a class="dbm-nav-link" href="/#services">Services</a>
+        <a class="dbm-nav-link" href="/#pricing">Pricing</a>
         <a class="dbm-nav-link" href="/#about-us">About Us</a>
       </div>
     </div>

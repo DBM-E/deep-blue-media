@@ -11,6 +11,9 @@ export default defineNuxtConfig({
     "/services": {
       redirect: "/#services",
     },
+    "/pricing": {
+      redirect: "/#pricing",
+    },
     "/about-us": {
       redirect: "/#about-us",
     },
