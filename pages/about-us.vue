@@ -1,7 +1,7 @@
 <template>
   <div class="dbm-section">
     <div class="dbm-section-header">The Company</div>
-    <div class="dbm-about-us">
+    <div class="dbm-single-width">
       <p>
         <strong>Deep Blue Media</strong> is a video production company based in
         Spokane, Washington.
@@ -44,11 +44,6 @@ const profileData = [
 </script>
 
 <style lang="scss" scoped>
-.dbm-about-us {
-  max-width: 640px;
-  margin: 0 auto;
-}
-
 .dbm-profiles {
   column-gap: 0.5rem;
   display: grid;

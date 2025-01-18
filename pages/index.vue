@@ -26,11 +26,12 @@
       </div>
 
       <div class="dbm-card">
-        <div class="dbm-card-title">Video Editing</div>
+        <div class="dbm-card-title">Post-Production Editing</div>
         <p>
-          We provide standard editing techniques (trimming, splicing, and
+          We provide standard video editing techniques (trimming, splicing, and
           merging) plus basic visual adjustments such as color grading
-          (coordinating brightness, saturation, levels, and contrast).
+          (coordinating brightness, saturation, levels, and contrast across
+          scenes).
         </p>
         <p>
           This also includes basic audio editing such as overdubbing music. We
@@ -39,13 +40,14 @@
       </div>
     </div>
 
-    <div class="dbm-services">
-      <AppCard
-        class="dbm-service-card"
-        v-for="item in serviceData"
-        :title="item.title"
-        :description="item.description"
-      />
+    <div class="dbm-card">
+      <div class="dbm-card-title">Social Media Marketing</div>
+      <div class="dbm-single-width">
+        <p>
+          We can help you plan, execute, and distribute content for effective
+          engagement on Facebook, Instagram, TikTok, and YouTube.
+        </p>
+      </div>
     </div>
   </div>
 
@@ -61,18 +63,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-const serviceData = [
-  {
-    title: "Marketing",
-    description:
-      "Trimming, splicing, merging clips. Color grading. Mixing audio. Subtitles. ",
-  },
-  { title: "Studio Recordings", description: "In a studio" },
-  { title: "Equipment Rental", description: "DJI Ronin 4D. Drones." },
-];
-</script>
 
 <style lang="scss" scoped>
 .dbm-services {
@@ -97,7 +87,7 @@ const serviceData = [
 .dbm-video-production-text {
   column-gap: 0.5rem;
   display: grid;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0;
   overflow: hidden;
   row-gap: 0.5rem;
 
