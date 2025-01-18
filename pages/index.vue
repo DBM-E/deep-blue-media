@@ -69,7 +69,11 @@
       </div>
       <div class="dbm-card">
         <div class="dbm-card-title">DJI Ronin 4D</div>
-        <p>Our premier camera</p>
+        <p>
+          Our premier camera, the stabilizing z-axis gimbal creates extremely
+          smooth shots for quicker <em>and</em> more robust handheld
+          recording—all in 8K.
+        </p>
       </div>
     </div>
   </div>
