@@ -21,6 +21,10 @@
           <MdiIcon class="dbm-contact-icon" icon="mdiPhone" />
           <div class="dbm-contact-label">(509)-273-9481</div>
         </div>
+        <div class="dbm-contact-item">
+          <MdiIcon class="dbm-contact-icon" icon="mdiMapMarker" />
+          <div class="dbm-contact-label">Spokane, WA</div>
+        </div>
       </div>
     </div>
   </div>
