@@ -7,7 +7,7 @@ html {
   --app-image-placeholder-color: var(--app-card-border-color);
   --app-text-color: white;
 
-  /** NOTE(vika): The max width is based on the standard size of an HD video. */
+  /* NOTE(vika): The max width is based on the standard size of an HD video. */
   --app-max-width: 1280px;
 
   background: var(--app-background-color);
@@ -45,7 +45,7 @@ p {
   padding: 0 2rem;
   position: relative;
 
-  @media (max-width: 600px) {
+  @media (max-width: 639px) {
     padding: 0 1rem;
   }
 }
@@ -62,7 +62,6 @@ p {
   }
 }
 
-/* TODO(vika): Make sure elements all use the same breakpoint 640 */
 .dbm-card,
 .dbm-image-card {
   background: var(--app-card-color);

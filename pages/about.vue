@@ -53,11 +53,11 @@
   display: grid;
   row-gap: 1rem;
 
-  @media (max-width: 600px) {
+  @media (max-width: 639px) {
     grid-template-columns: 1fr;
   }
 
-  @media (min-width: 601px) {
+  @media (min-width: 640px) {
     grid-template-columns: 1fr 1fr;
   }
 }

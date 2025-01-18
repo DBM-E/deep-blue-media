@@ -32,7 +32,7 @@
   padding: 2rem 0;
   position: relative;
 
-  @media (max-width: 600px) {
+  @media (max-width: 639px) {
     padding: 1rem 0;
   }
 }
@@ -49,7 +49,7 @@
   text-align: center;
   padding: 0 2rem;
 
-  @media (max-width: 600px) {
+  @media (max-width: 639px) {
     padding: 0 1rem;
   }
 }
@@ -58,7 +58,7 @@
   font: 400 3.5rem/1 "Vollkorn SC", serif;
   letter-spacing: 0;
 
-  @media (max-width: 600px) {
+  @media (max-width: 639px) {
     font-size: 2rem;
   }
 }
@@ -67,7 +67,7 @@
   font: 400 1.5rem/1 "Vollkorn", serif;
   margin-top: 0.25rem;
 
-  @media (max-width: 600px) {
+  @media (max-width: 639px) {
     font-size: 1.125rem;
   }
 }
