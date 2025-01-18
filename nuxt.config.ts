@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
   router: {
     options: {
       scrollBehaviorType: "smooth",
@@ -11,8 +14,8 @@ export default defineNuxtConfig({
     "/services": {
       redirect: "/#services",
     },
-    "/pricing": {
-      redirect: "/#pricing",
+    "/rentals": {
+      redirect: "/#rentals",
     },
   },
   css: ["~/assets/css/main.scss"],
