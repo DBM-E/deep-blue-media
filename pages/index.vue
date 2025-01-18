@@ -67,13 +67,16 @@
           music or voice-over tracks.
         </p>
       </div>
-      <div class="dbm-card">
-        <div class="dbm-card-title">DJI Ronin 4D</div>
-        <p>
-          Our premier camera, the stabilizing z-axis gimbal creates extremely
-          smooth shots for quicker <em>and</em> more robust handheld
-          recording—all in 8K.
-        </p>
+      <div class="dbm-image-card">
+        <div class="dbm-image-card-display camera"></div>
+        <div class="dbm-image-card-text">
+          <div class="dbm-card-title">DJI Ronin 4D</div>
+          <p>
+            Our premier camera, the stabilizing z-axis gimbal creates extremely
+            smooth shots for quicker <em>and</em> more robust handheld
+            recording—all in 8K.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -120,6 +123,10 @@
   @media (min-width: 640px) {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.dbm-image-card-display.camera {
+  background-image: url("assets/camera-preview.jpg");
 }
 
 .dbm-video-production-text {
