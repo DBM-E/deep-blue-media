@@ -12,30 +12,26 @@
     <!-- The bread and butter services. -->
     <div class="dbm-video-production-text">
       <div class="dbm-video-production-section">
-        <div class="dbm-video-production-title">Video Production</div>
-        <div class="dbm-video-production-description">
-          <p>
-            From short-form content for social media and commercial
-            advertisements, to long-form content including weddings,
-            documentaries, and corporate messaging.
-          </p>
-          <p>
-            In addition, we are licensed by the FAA to operate drones—perfect
-            for aerial shots for insurance inspections and real estate listings.
-            We are also SCUBA certified for underwater photography.
-          </p>
-        </div>
+        <div class="dbm-card-title">Video Production</div>
+        <p>
+          From short-form content for social media and commercial
+          advertisements, to long-form content including weddings,
+          documentaries, and corporate messaging.
+        </p>
+        <p>
+          In addition, we are licensed by the FAA to operate drones—perfect for
+          aerial shots for insurance inspections and real estate listings. We
+          are also SCUBA certified for underwater photography.
+        </p>
       </div>
 
       <div class="dbm-video-production-section">
-        <div class="dbm-video-production-title">Video Editing</div>
-        <div class="dbm-video-production-description">
-          <p>
-            We provide standard editing from trimming, splicing and merging to
-            color grading. We can also do basic audio enhancements with music
-            and subtitles.
-          </p>
-        </div>
+        <div class="dbm-card-title">Video Editing</div>
+        <p>
+          We provide standard editing from trimming, splicing and merging to
+          color grading. We can also do basic audio enhancements with music and
+          subtitles.
+        </p>
       </div>
     </div>
 
@@ -115,17 +111,6 @@ const serviceData = [
   @media (min-width: 640px) {
     padding: 1rem 2rem;
   }
-}
-
-.dbm-video-production-title {
-  font: 500 1.5rem/1 "Vollkorn", san-serif;
-  padding: 0.5rem 0;
-  text-align: center;
-}
-
-.dbm-video-production-description {
-  margin: 0 auto;
-  max-width: 640px;
 }
 
 .dbm-pricing {
