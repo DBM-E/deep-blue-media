@@ -20,19 +20,20 @@
 
 <style lang="scss" scoped>
 .dbm-video-production-card {
-  background: var(--app-card-color);
-  border-radius: var(--app-border-radius);
+  column-gap: 0.5rem;
+  display: grid;
   overflow: hidden;
+  row-gap: 0.5rem;
 }
 
 .dbm-video-production-text {
+  background: var(--app-card-color);
   border: 2px solid var(--app-card-border-color);
-  border-radius: 0 0 var(--app-border-radius) var(--app-border-radius);
-  border-top: 0;
-  padding: 1rem 2rem;
+  border-radius: var(--app-border-radius);
+  padding: 1rem;
 
-  @media (max-width: 600px) {
-    padding: 1rem;
+  @media (min-width: 640px) {
+    padding: 1rem 2rem;
   }
 }
 
