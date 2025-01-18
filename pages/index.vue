@@ -52,7 +52,7 @@
   </div>
 
   <div class="dbm-section">
-    <div class="dbm-section-header">Studio & Equipment Rental</div>
+    <div class="dbm-section-header">Studio & Equipment Rentals</div>
     <div class="dbm-rental-text">
       <div class="dbm-card">
         <div class="dbm-card-title">The Studio</div>
@@ -77,11 +77,11 @@
     <a class="dbm-scroll-to" id="pricing"></a>
     <div class="dbm-section-header">The Pricing</div>
     <div class="dbm-single-width">
-      <p>
+      <div>
         We offer flexible pricing options to meet the needs of almost any
         budget. Contact us for a free consultation—we'll work with you to create
         a tailored quote that suits the needs of your project.
-      </p>
+      </div>
     </div>
   </div>
 </template>
