@@ -14,9 +14,6 @@ export default defineNuxtConfig({
     "/pricing": {
       redirect: "/#pricing",
     },
-    "/about-us": {
-      redirect: "/#about-us",
-    },
   },
   css: ["~/assets/css/main.scss"],
   modules: [

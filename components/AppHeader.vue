@@ -12,7 +12,7 @@
       <div class="dbm-nav-links">
         <a class="dbm-nav-link" href="/#services">Services</a>
         <a class="dbm-nav-link" href="/#pricing">Pricing</a>
-        <a class="dbm-nav-link" href="/#about-us">About Us</a>
+        <a class="dbm-nav-link" href="/about-us">About Us</a>
       </div>
     </div>
   </div>
@@ -82,7 +82,10 @@
   flex-direction: row;
   margin: 0 auto;
   max-width: var(--app-max-width);
-  padding: 0 2rem;
+
+  @media (min-width: 640px) {
+    padding: 0 2rem;
+  }
 }
 
 .dbm-nav-link {
