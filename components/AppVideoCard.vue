@@ -1,6 +1,6 @@
 <template>
   <div class="dbm-video-card">
-    <video class="dbm-video-display">
+    <video class="dbm-video-display" autoplay loop muted>
       <source :src="props.src" type="video/mp4" />
     </video>
   </div>
@@ -14,7 +14,7 @@ const props = defineProps<{
 
 <style lang="scss" scoped>
 .dbm-video-card {
-  aspect-ratio: 1.825/1;
+  aspect-ratio: 1.9/1;
   background: black;
   width: 100%;
 }

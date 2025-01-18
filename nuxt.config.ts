@@ -2,6 +2,19 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
+  router: {
+    options: {
+      scrollBehaviorType: "smooth",
+    },
+  },
+  routeRules: {
+    "/services": {
+      redirect: "/#services",
+    },
+    "/pricing": {
+      redirect: "/#pricing",
+    },
+  },
   css: ["~/assets/css/main.scss"],
   modules: [
     [

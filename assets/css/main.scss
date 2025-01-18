@@ -1,13 +1,13 @@
-/** NOTE(vika): The max width is based on the standard size of an HD video. */
-
 html {
   --app-accent-color: #3d6e94;
   --app-background-color: #001020;
   --app-border-radius: 8px;
   --app-card-color: #0c1326;
   --app-card-border-color: #282858;
-  --app-image-placeholder-color: #19316b;
+  --app-image-placeholder-color: var(--app-card-border-color);
   --app-text-color: white;
+
+  /** NOTE(vika): The max width is based on the standard size of an HD video. */
   --app-max-width: 1280px;
 
   background: var(--app-background-color);
@@ -33,4 +33,61 @@ p {
   flex-direction: column;
   height: 100%;
   overflow-y: auto;
+}
+
+/* Universal app stylings. */
+
+.dbm-scroll-to {
+  position: absolute;
+
+  /* NOTE(vika): Offset to appear just under header. */
+  top: -140px;
+
+  @media (min-width: 640px) {
+    top: -210px;
+  }
+}
+
+.dbm-section {
+  padding: 0 2rem;
+  position: relative;
+
+  @media (max-width: 600px) {
+    padding: 0 1rem;
+  }
+}
+
+.dbm-section-header {
+  font: 400 2rem/1 "Vollkorn SC", san-serif;
+  letter-spacing: -0.025em;
+  padding: 1.5rem 0;
+  text-align: center;
+
+  @media (min-width: 640px) {
+    font-size: 2.25rem;
+    padding: 2.25rem 0;
+  }
+}
+
+/* TODO(vika): Make sure elements all use the same breakpoint 640 */
+.dbm-card {
+  background: var(--app-card-color);
+  border: 2px solid var(--app-card-border-color);
+  border-radius: var(--app-border-radius);
+  padding: 1rem;
+
+  @media (min-width: 640px) {
+    padding: 1rem 2rem;
+  }
+}
+
+.dbm-card-title {
+  font: 500 1.5rem/1 "Vollkorn", san-serif;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.dbm-single-width {
+  margin: 0 auto;
+  max-width: 640px;
 }

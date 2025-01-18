@@ -1,101 +1,101 @@
 <template>
-  <!-- <AppVideoCard :src="splashData.src" :title="splashData.title" /> -->
-
   <div class="dbm-section">
+    <a class="dbm-scroll-to" id="services"></a>
     <div class="dbm-section-header">The Services</div>
-    <div class="dbm-services">
-      <AppCard
-        class="dbm-service-card"
-        v-for="item in serviceData"
-        :title="item.title"
-        :description="item.description"
-      />
+
+    <!-- The "Portfolio" video. -->
+    <AppVideoCard
+      class="dbm-video-production-display"
+      src="_nuxt/assets/video-production-preview.mp4"
+    />
+
+    <!-- The bread and butter services. -->
+    <div class="dbm-video-production-text">
+      <div class="dbm-card">
+        <div class="dbm-card-title">Video Production</div>
+        <p>
+          From short-form content for social media and commercial
+          advertisements, to long-form content including corporate messaging,
+          weddings, films, and documentaries.
+        </p>
+        <p>
+          In addition, we are licensed by the FAA to operate drones—perfect for
+          aerial shots for insurance inspections and real estate listings. We
+          are also SCUBA certified for underwater photography.
+        </p>
+      </div>
+
+      <div class="dbm-card">
+        <div class="dbm-card-title">Post-Production Editing</div>
+        <p>
+          We provide standard video editing techniques (trimming, splicing, and
+          merging) plus basic visual adjustments such as color grading
+          (coordinating brightness, saturation, levels, and contrast across
+          scenes).
+        </p>
+        <p>
+          This also includes basic audio editing such as overdubbing music. We
+          even offer to transcribe accessible subtitles.
+        </p>
+      </div>
+    </div>
+
+    <div class="dbm-card">
+      <div class="dbm-card-title">Social Media Marketing</div>
+      <div class="dbm-single-width">
+        <p>
+          We can help you plan, execute, and distribute content for effective
+          engagement on Facebook, Instagram, TikTok, and YouTube.
+        </p>
+      </div>
     </div>
   </div>
 
   <div class="dbm-section">
-    <div class="dbm-section-header">The Company</div>
-    <div class="dbm-about-us">
-      <p>
-        <strong>Deep Blue Media</strong> is a video production company based in
-        Spokane, Washington.
-      </p>
-      <p>
-        We specialize in combining our love of adventure with our expertise in
-        video production, culminating in content that is exciting to direct and
-        extraordinary to experience.
-      </p>
-      <!-- TODO(vika): Inquire whether there are service limits re: distance. -->
+    <a class="dbm-scroll-to" id="rentals"></a>
+    <div class="dbm-section-header">The Rentals</div>
+    <div class="dbm-rental-text">
+      <div class="dbm-card">
+        <div class="dbm-card-title">The Studio</div>
+        <p>
+          Located in Spokane Valley, Washington, our professional recording
+          space is ready for post-production ADR with high-quality audio
+          equipment.
+        </p>
+        <p>
+          The space and equipment are also available to rent to create your own
+          music or voice-over tracks.
+        </p>
+      </div>
+      <div class="dbm-card">
+        <div class="dbm-card-title">DJI Ronin 4D</div>
+        <p>
+          Our premier camera, the stabilizing z-axis gimbal creates extremely
+          smooth shots for quicker <em>and</em> more robust handheld
+          recording—all in 8K.
+        </p>
+      </div>
     </div>
   </div>
 
   <div class="dbm-section">
-    <div class="dbm-section-header">The Crew</div>
-    <div class="dbm-profiles">
-      <ProfileCard
-        class="dbm-profile-card"
-        v-for="item in profileData"
-        :title="item.title"
-        :description="item.description"
-      />
+    <div class="dbm-section-header">The Pricing</div>
+    <div class="dbm-single-width">
+      <div>
+        We offer flexible pricing options to meet the needs of almost any
+        budget. Contact us for a free consultation—we'll work with you to create
+        a tailored quote that suits the needs of your project.
+      </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-const splashData = {
-  title: "Video Production",
-  src: "_nuxt/assets/video-production-preview.mp4",
-};
-
-const serviceData = [
-  {
-    title: "Video Production",
-    description: "Filming for social media, documentaries, weddings.",
-  },
-  {
-    title: "Video Editing",
-    description:
-      "Trimming, splicing, merging clips. Color grading. Mixing audio. Subtitles. ",
-  },
-  { title: "Studio Recordings", description: "In a studio" },
-  { title: "Equipment Rental", description: "DJI Ronin 4D. Drones." },
-];
-
-const profileData = [
-  {
-    title: "Evan",
-    description:
-      "You should talk about your unique skills and qualifications here.",
-  },
-  {
-    title: "Chris",
-    description:
-      "You should talk about your unique skills and qualifications here.",
-  },
-];
-</script>
-
 <style lang="scss" scoped>
-.dbm-section {
-  padding: 0.5rem 2rem;
-
-  @media (max-width: 600px) {
-    padding: 0.5rem 1rem;
-  }
-}
-
-.dbm-section-header {
-  font: 400 2rem/1 "Vollkorn SC", san-serif;
-  letter-spacing: -0.025em;
-  padding: 1rem 0;
-  text-align: center;
-}
-
 .dbm-services {
   column-gap: 0.5rem;
   display: grid;
   row-gap: 0.5rem;
+  margin-top: 0.5rem;
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
@@ -110,22 +110,19 @@ const profileData = [
   }
 }
 
-.dbm-about-us {
-  max-width: 640px;
-  margin: 0 auto;
-}
-
-.dbm-profiles {
+.dbm-video-production-text,
+.dbm-rental-text {
   column-gap: 0.5rem;
   display: grid;
-  row-gap: 1rem;
+  overflow: hidden;
+  row-gap: 0.5rem;
 
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
-
-  @media (min-width: 601px) {
+  @media (min-width: 640px) {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.dbm-video-production-text {
+  margin: 0.5rem 0;
 }
 </style>

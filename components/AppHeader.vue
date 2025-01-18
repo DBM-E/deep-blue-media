@@ -7,13 +7,20 @@
         <div class="dbm-header-subtitle">Video Production Company</div>
       </div>
     </div>
+
+    <div class="dbm-nav-card">
+      <div class="dbm-nav-links">
+        <a class="dbm-nav-link" href="/#services">Services</a>
+        <a class="dbm-nav-link" href="/#rentals">Rentals</a>
+        <a class="dbm-nav-link" href="/about">About</a>
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .dbm-sticky-header {
   background: var(--app-card-color);
-  border-bottom: 1px solid var(--app-card-border-color);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -62,6 +69,42 @@
 
   @media (max-width: 600px) {
     font-size: 1.125rem;
+  }
+}
+
+.dbm-nav-card {
+  border-bottom: 2px solid var(--app-card-border-color);
+  border-top: 2px solid var(--app-card-border-color);
+}
+
+.dbm-nav-links {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: var(--app-max-width);
+
+  @media (min-width: 640px) {
+    padding: 0 2rem;
+  }
+}
+
+.dbm-nav-link {
+  color: white;
+  flex-grow: 1;
+  font: 700 1rem/1.6 "Lato", sans-serif;
+  letter-spacing: 0.75px;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  width: 0;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.0625);
+  }
+
+  @media (min-width: 640px) {
+    padding: 1rem;
   }
 }
 </style>

@@ -21,6 +21,10 @@
           <MdiIcon class="dbm-contact-icon" icon="mdiPhone" />
           <div class="dbm-contact-label">(509)-273-9481</div>
         </div>
+        <div class="dbm-contact-item">
+          <MdiIcon class="dbm-contact-icon" icon="mdiMapMarker" />
+          <div class="dbm-contact-label">Spokane, WA, USA</div>
+        </div>
       </div>
     </div>
   </div>
@@ -32,7 +36,7 @@ $dbm-logo-spacing: calc($dbm-logo-size / 2);
 
 .dbm-footer-card {
   background: var(--app-accent-color);
-  margin-top: $dbm-logo-spacing;
+  margin-top: calc($dbm-logo-spacing + 1rem);
   position: relative;
 }
 
