@@ -52,7 +52,7 @@
   </div>
 
   <div class="dbm-section">
-    <div class="dbm-section-header">Studio & Equipment Rentals</div>
+    <div class="dbm-section-header">The Rentals</div>
     <div class="dbm-rental-text">
       <div class="dbm-card">
         <div class="dbm-card-title">The Studio</div>
