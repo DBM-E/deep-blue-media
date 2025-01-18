@@ -23,7 +23,7 @@
         </div>
         <div class="dbm-contact-item">
           <MdiIcon class="dbm-contact-icon" icon="mdiMapMarker" />
-          <div class="dbm-contact-label">Spokane, WA</div>
+          <div class="dbm-contact-label">Spokane, WA, USA</div>
         </div>
       </div>
     </div>
