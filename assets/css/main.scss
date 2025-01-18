@@ -38,10 +38,10 @@ p {
 /* NOTE(vika): Offset to appear just under header. */
 .dbm-scroll-to {
   position: absolute;
-  top: -210px;
+  top: -140px;
 
-  @media (max-width: 600px) {
-    top: -144px;
+  @media (min-width: 640px) {
+    top: -210px;
   }
 }
 
@@ -59,4 +59,9 @@ p {
   letter-spacing: -0.025em;
   padding: 1rem 0;
   text-align: center;
+
+  @media (min-width: 640px) {
+    font-size: 2.25rem;
+    padding: 1.5rem 0;
+  }
 }

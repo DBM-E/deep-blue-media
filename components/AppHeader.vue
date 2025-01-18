@@ -93,7 +93,7 @@
   flex-grow: 1;
   font: 700 1rem/1.6 "Lato", sans-serif;
   letter-spacing: 0.75px;
-  padding: 1rem;
+  padding: 0.75rem;
   text-align: center;
   text-decoration: none;
   transition-duration: 0.4s;
@@ -101,6 +101,10 @@
 
   &:hover {
     background: rgba(255, 255, 255, 0.0625);
+  }
+
+  @media (min-width: 640px) {
+    padding: 1rem;
   }
 }
 </style>
