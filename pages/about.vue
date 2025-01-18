@@ -1,39 +1,41 @@
 <template>
-  <div class="dbm-section">
-    <div class="dbm-section-header">The Company</div>
-    <div class="dbm-about-us">
-      <p>
-        <strong>Deep Blue Media</strong> is a video production company based in
-        Spokane, Washington.
-      </p>
-      <p>
-        We specialize in combining our love of adventure with our expertise in
-        video production, culminating in content that is exciting to direct and
-        extraordinary to experience.
-      </p>
-    </div>
-  </div>
-
-  <div class="dbm-section">
-    <div class="dbm-section-header">The Crew</div>
-    <div class="dbm-profiles">
-      <div class="dbm-profile-card">
-        <div class="dbm-profile-card-image evan"></div>
-        <div class="dbm-profile-card-text">
-          <div class="dbm-profile-card-title">Evan</div>
-          <p class="dbm-profile-card-description">
-            You should talk about your unique skills and qualifications here.
-          </p>
-        </div>
+  <div class="dbm-page">
+    <div class="dbm-section">
+      <div class="dbm-section-header">The Company</div>
+      <div class="dbm-about-us">
+        <p>
+          <strong>Deep Blue Media</strong> is a video production company based
+          in Spokane, Washington.
+        </p>
+        <p>
+          We specialize in combining our love of adventure with our expertise in
+          video production, culminating in content that is exciting to direct
+          and extraordinary to experience.
+        </p>
       </div>
+    </div>
 
-      <div class="dbm-profile-card">
-        <div class="dbm-profile-card-image chris"></div>
-        <div class="dbm-profile-card-text">
-          <div class="dbm-profile-card-title">Chris</div>
-          <p class="dbm-profile-card-description">
-            You should talk about your unique skills and qualifications here.
-          </p>
+    <div class="dbm-section">
+      <div class="dbm-section-header">The Crew</div>
+      <div class="dbm-profiles">
+        <div class="dbm-profile-card">
+          <div class="dbm-profile-card-image evan"></div>
+          <div class="dbm-profile-card-text">
+            <div class="dbm-profile-card-title">Evan</div>
+            <p class="dbm-profile-card-description">
+              You should talk about your unique skills and qualifications here.
+            </p>
+          </div>
+        </div>
+
+        <div class="dbm-profile-card">
+          <div class="dbm-profile-card-image chris"></div>
+          <div class="dbm-profile-card-text">
+            <div class="dbm-profile-card-title">Chris</div>
+            <p class="dbm-profile-card-description">
+              You should talk about your unique skills and qualifications here.
+            </p>
+          </div>
         </div>
       </div>
     </div>
