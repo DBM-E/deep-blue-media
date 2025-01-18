@@ -1,9 +1,9 @@
 <template>
-  <div class="dbm-service-splash-card">
+  <div class="dbm-video-production-card">
     <AppVideoCard src="_nuxt/assets/video-production-preview.mp4" />
-    <div class="dbm-service-splash-text">
-      <div class="dbm-service-splash-title">Video Production</div>
-      <div class="dbm-service-splash-description">
+    <div class="dbm-video-production-text">
+      <div class="dbm-video-production-title">Video Production</div>
+      <div class="dbm-video-production-description">
         <p>
           From short-form content for social media, to long-form content
           including weddings, documentaries, and corporate messaging.
@@ -19,13 +19,13 @@
 </template>
 
 <style lang="scss" scoped>
-.dbm-service-splash-card {
+.dbm-video-production-card {
   background: var(--app-card-color);
   border-radius: var(--app-border-radius);
   overflow: hidden;
 }
 
-.dbm-service-splash-text {
+.dbm-video-production-text {
   border: 2px solid var(--app-card-border-color);
   border-radius: 0 0 var(--app-border-radius) var(--app-border-radius);
   border-top: 0;
@@ -36,13 +36,13 @@
   }
 }
 
-.dbm-service-splash-title {
+.dbm-video-production-title {
   font: 500 1.5rem/1 "Vollkorn", san-serif;
   padding: 0.5rem 0;
   text-align: center;
 }
 
-.dbm-service-splash-description {
+.dbm-video-production-description {
   margin: 0 auto;
   max-width: 640px;
 }

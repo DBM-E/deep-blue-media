@@ -2,7 +2,7 @@
   <div class="dbm-section">
     <a class="dbm-scroll-to" id="services"></a>
     <div class="dbm-section-header">The Services</div>
-    <ServiceSplashCard />
+    <VideoProductionCard />
     <div class="dbm-services">
       <AppCard
         class="dbm-service-card"
