@@ -6,6 +6,12 @@
   <AppFooter />
 </template>
 
+<script setup lang="ts">
+useHead({
+  title: 'Deep Blue Media',
+});
+</script>
+
 <style lang="scss" scoped>
 .dbm-page-content {
   flex-grow: 1;
