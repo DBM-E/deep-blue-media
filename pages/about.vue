@@ -51,14 +51,19 @@
 .dbm-profiles {
   column-gap: 0.5rem;
   display: grid;
-  row-gap: 1rem;
-
-  @media (max-width: 639px) {
-    grid-template-columns: 1fr;
-  }
+  row-gap: 0.5rem;
 
   @media (min-width: 640px) {
     grid-template-columns: 1fr 1fr;
+
+    /* NOTE(vika): If the last grid item is by itself. */
+    > :last-child:nth-child(odd) {
+      grid-column-end: 3;
+      grid-column-start: 1;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 640px;
+    }
   }
 }
 

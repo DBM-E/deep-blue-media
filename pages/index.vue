@@ -6,12 +6,12 @@
 
       <!-- The "Portfolio" video. -->
       <AppVideoCard class="dbm-video-production-display">
-        <!-- <source src="~/assets/video-production-preview.webm" type="video/webm" /> -->
         <source src="~/assets/video-production-preview.mp4" type="video/mp4" />
       </AppVideoCard>
 
       <!-- The bread and butter services. -->
-      <div class="dbm-video-production-text">
+      <!-- Organized as: production, post-production, distribution. -->
+      <div class="dbm-production-cards">
         <div class="dbm-card">
           <div class="dbm-card-title">Video Production</div>
           <p>
@@ -39,15 +39,15 @@
             even offer to transcribe accessible subtitles.
           </p>
         </div>
-      </div>
 
-      <div class="dbm-card">
-        <div class="dbm-card-title">Social Media Marketing</div>
-        <div class="dbm-single-width">
-          <p>
-            We can help you plan, execute, and distribute content for effective
-            engagement on Facebook, Instagram, TikTok, and YouTube.
-          </p>
+        <div class="dbm-card">
+          <div class="dbm-card-title">Social Media Marketing</div>
+          <div class="dbm-single-width">
+            <p>
+              We can help you plan, execute, and distribute content for
+              effective engagement on Facebook, Instagram, TikTok, and YouTube.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -71,6 +71,7 @@
             </p>
           </div>
         </div>
+
         <div class="dbm-image-card">
           <div class="dbm-image-card-display camera"></div>
           <div class="dbm-image-card-text">
@@ -99,35 +100,25 @@
 </template>
 
 <style lang="scss" scoped>
-.dbm-services {
-  column-gap: 0.5rem;
-  display: grid;
-  row-gap: 0.5rem;
-  margin-top: 0.5rem;
-
-  @media (max-width: 639px) {
-    grid-template-columns: 1fr;
-  }
-
-  @media (min-width: 640px) and (max-width: 1023px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.dbm-video-production-text,
+.dbm-production-cards,
 .dbm-rental-cards {
   column-gap: 0.5rem;
   display: grid;
-  overflow: hidden;
   row-gap: 0.5rem;
 
   @media (min-width: 640px) {
     grid-template-columns: 1fr 1fr;
+
+    /* NOTE(vika): If the last grid item is by itself. */
+    > :last-child:nth-child(odd) {
+      grid-column-end: 3;
+      grid-column-start: 1;
+    }
   }
+}
+
+.dbm-production-cards {
+  margin-top: 0.5rem;
 }
 
 .dbm-image-card-display.studio {
@@ -136,9 +127,5 @@
 
 .dbm-image-card-display.camera {
   background-image: url("assets/camera-preview.jpg");
-}
-
-.dbm-video-production-text {
-  margin: 0.5rem 0;
 }
 </style>
