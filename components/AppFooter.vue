@@ -37,6 +37,7 @@ $dbm-logo-spacing: calc($dbm-logo-size / 2);
 .dbm-footer-card {
   background: var(--app-accent-color);
   margin-top: calc($dbm-logo-spacing + 1rem);
+  bottom: 0;
   position: relative;
 }
 
