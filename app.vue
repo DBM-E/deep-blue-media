@@ -1,9 +1,11 @@
 <template>
-  <AppHeader />
-  <div class="dbm-page-content">
-    <NuxtPage />
+  <div class="app">
+    <AppHeader />
+    <div class="dbm-page-content">
+      <NuxtPage />
+    </div>
+    <AppFooter />
   </div>
-  <AppFooter />
 </template>
 
 <script setup lang="ts">
@@ -13,6 +15,12 @@ useHead({
 </script>
 
 <style lang="scss" scoped>
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .dbm-page-content {
   flex-grow: 1;
   max-width: var(--app-max-width);
