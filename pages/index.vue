@@ -5,10 +5,10 @@
       <div class="dbm-section-header">The Services</div>
 
       <!-- The "Portfolio" video. -->
-      <AppVideoCard
-        class="dbm-video-production-display"
-        src="_nuxt/assets/video-production-preview.mp4"
-      />
+      <AppVideoCard class="dbm-video-production-display">
+        <!-- <source src="~/assets/video-production-preview.webm" type="video/webm" /> -->
+        <source src="~/assets/video-production-preview.mp4" type="video/mp4" />
+      </AppVideoCard>
 
       <!-- The bread and butter services. -->
       <div class="dbm-video-production-text">

@@ -8,6 +8,12 @@
   </div>
 </template>
 
+<script setup lang="ts">
+useHead({
+  title: 'Deep Blue Media',
+});
+</script>
+
 <style lang="scss" scoped>
 .app {
   display: flex;

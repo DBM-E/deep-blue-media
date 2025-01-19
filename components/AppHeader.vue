@@ -1,7 +1,7 @@
 <template>
   <div class="dbm-sticky-header">
     <div class="dbm-header-card">
-      <a class="dbm-header-link" href="/"></a>
+      <NuxtLink class="dbm-header-link" to="/"></NuxtLink>
       <div class="dbm-header-text">
         <div class="dbm-header-title">Deep Blue Media</div>
         <div class="dbm-header-subtitle">Video Production Company</div>

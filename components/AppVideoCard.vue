@@ -1,16 +1,10 @@
 <template>
   <div class="dbm-video-card">
     <video class="dbm-video-display" autoplay loop muted>
-      <source :src="props.src" type="video/mp4" />
+      <slot></slot>
     </video>
   </div>
 </template>
-
-<script setup lang="ts">
-const props = defineProps<{
-  src: string;
-}>();
-</script>
 
 <style lang="scss" scoped>
 .dbm-video-card {

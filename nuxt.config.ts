@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
+  gtag: {
+    id: 'MY-GTAG-ID'
+  },
   devtools: { enabled: true },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
@@ -31,5 +34,6 @@ export default defineNuxtConfig({
       },
     ],
     "nuxt-mdi",
+    "nuxt-gtag"
   ],
 });
