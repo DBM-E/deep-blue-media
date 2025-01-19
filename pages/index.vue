@@ -7,7 +7,7 @@
       <!-- The "Portfolio" video. -->
       <AppVideoCard
         class="dbm-video-production-display"
-        src="_nuxt/assets/video-production-preview.mp4"
+        src="assets/video-production-preview.mp4"
       />
 
       <!-- The bread and butter services. -->
