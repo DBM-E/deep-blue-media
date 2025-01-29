@@ -4,7 +4,7 @@
       <NuxtLink class="dbm-header-link" to="/"></NuxtLink>
       <div class="dbm-header-text">
         <div class="dbm-header-title">Deep Blue Media</div>
-        <div class="dbm-header-subtitle">Video Production Company</div>
+        <div class="dbm-header-subtitle">Media Production Company</div>
       </div>
     </div>
 

@@ -59,14 +59,14 @@
         <div class="dbm-image-card">
           <div class="dbm-image-card-display studio"></div>
           <div class="dbm-image-card-text">
-            <div class="dbm-card-title">The Studio</div>
+            <div class="dbm-card-title">The Studio - COMING SOON!</div>
             <p>
-              Located in Spokane Valley, Washington, our professional recording
-              space is ready for post-production ADR with high-quality audio
+              Located in Spokane, Washington, our professional recording
+              space will be ready for post-production ADR with high-quality audio
               equipment.
             </p>
             <p>
-              The space and equipment are also available to rent to create your
+              The space and equipment will also be available to rent to create your
               own music or voice-over tracks.
             </p>
           </div>
